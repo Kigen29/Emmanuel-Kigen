@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import MediumButton from "@/components/MediumButton";
 import Image from "next/image";
 import eesti from "@/components/images/eesti.jpg";
 import gichohi from "@/components/images/Gichohi.jpg";
@@ -9,7 +8,7 @@ import Portfolio1 from "@/components/images/Portfolio1.jpg";
 import refugee from "@/components/images/homapage.jpg";
 import { Card } from "@/components/ui/card";
 import { FaLink } from "react-icons/fa";
-import { IoIosArrowForward } from "react-icons/io";
+
 
 const projectsData = [
   {
