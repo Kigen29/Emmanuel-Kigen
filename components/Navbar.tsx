@@ -1,105 +1,58 @@
 import React from "react";
 import Link from "next/link";
 import Button from "@/components/MediumButton";
-import { FaBars, FaDownload } from "react-icons/fa6";
-import { FaTimes } from "react-icons/fa";
-import { useState} from "react";
+import { FaBars, FaDownload, FaTimes } from "react-icons/fa";
+import { useState } from "react";
 
 export default function Navbar() {
-
-  function handleClick(){
-    const pdfUrl = '.\..\Kemboi Emmanuel Kigen CV.pdf';
-    const link = document.createElement('a');
-    link.href = pdfUrl;
-    link.download = 'Kemboi Emmanuel Kigen CV.pdf';
-    link.target = '_blank';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
- };
-
- const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleClick = () => {
+    const pdfUrl = "./../Kemboi Emmanuel Kigen CV.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "Kemboi Emmanuel Kigen CV.pdf";
+    link.target = "_blank";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <nav className="bg-[#314933] ml-6 mr-6 mt-6 rounded-lg drop-shadow-2xl">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <Link
-          href="/"
-          className="flex items-center space-x-3 rtl:space-x-reverse"
-        >
-          <span className="self-center whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r to-[#F2A615] from-[#F65B36] font-extrabold text-xl relative after:absolute after:bg-[#F65B36] after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300">
-            Natalie.
+      <div className="max-w-[1240px] mx-auto flex items-center justify-between p-4">
+        <Link href="/" className="flex items-center">
+          <span className="text-xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-[#F65B36] to-[#F2A615]">
+            Kigen.
           </span>
         </Link>
 
         <button
           onClick={toggleMenu}
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-[#F65B36] rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#F2A615] dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          className="lg:hidden text-[#F65B36] p-2 rounded-lg hover:bg-gray-100 focus:ring-2 focus:ring-[#F2A615]"
         >
-          <span className="sr-only">Open main menu</span>
-          {isMenuOpen ? (
-            <FaTimes className="w-5 h-5" />
-          ) : (
-            <FaBars className="w-5 h-5" />
-          )}
+          {isMenuOpen ? <FaTimes className="w-5 h-5" /> : <FaBars className="w-5 h-5" />}
         </button>
 
-        <div
-          className={`${
-            isMenuOpen ? "block" : "hidden"
-          } w-full lg:block lg:w-auto`}
-          id="navbar-default"
-        >
-          <ul className=" text-[#EDE5D8] flex flex-col p-4 lg:p-0 mt-4 border border-orange-100 rounded-lg lg:flex-row lg:space-x-8 lg:gap-12 rtl:space-x-reverse lg:mt-0 lg:border-0">
-            <li>
-              <Link
-                href="#hero"
-                className="block py-2 px-3  lg:bg-transparent lg:p-0 rounded hover:bg-[#F65B36] relative after:absolute after:bg-[#F65B36] after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#F2A615] "
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#talents"
-                className="block py-2 px-3  rounded hover:bg-[#F65B36] relative after:absolute after:bg-[#F65B36] after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#F2A615] lg:p-0 "
-              >
-                Talents
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#projects"
-                className="block py-2 px-3  rounded hover:bg-[#F65B36] relative after:absolute after:bg-[#F65B36] after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#F2A615] lg:p-0 "
-              >
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#skills"
-                className="block py-2 px-3  rounded hover:bg-[#F65B36] relative after:absolute after:bg-[#F65B36] after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#F2A615] lg:p-0 "
-              >
-                Skills
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#contact"
-                className="block py-2 px-3  rounded hover:bg-[#F65B36] relative after:absolute after:bg-[#F65B36] after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#F2A615] lg:p-0 "
-              >
-                Contact
-              </Link>
-            </li>
+        <div className={`lg:flex ${isMenuOpen ? "block" : "hidden"} lg:w-auto`}>
+          <ul className="lg:flex lg:space-x-8 text-[#EDE5D8] mt-4 lg:mt-0">
+            {["Home", "About","Education","Languages","Interests","Projects", "Skills", "Contact"].map((item) => (
+              <li key={item}>
+                <Link
+                  href={`#${item.toLowerCase()}`}
+                  className="block py-2 px-3 rounded hover:bg-[#F65B36] lg:hover:bg-transparent lg:hover:text-[#F2A615] relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-[#F65B36] after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:duration-300"
+                >
+                  {item}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 
-        {/* CV Button */}
         <div className="hidden lg:block">
           <Button onClick={handleClick}>
             CV <FaDownload className="ml-2 text-lg" />

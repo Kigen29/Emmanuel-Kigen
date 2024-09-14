@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Button from "@/components/MediumButton";
-import { FaBars, FaDownload } from "react-icons/fa6";
+import {FaDownload } from "react-icons/fa6";
 
 function handleClick() {
   const pdfUrl = "\ Kemboi Emmanuel Kigen CV.pdf";
@@ -14,7 +14,7 @@ function handleClick() {
   document.body.removeChild(link);
 }
 
-const Main = () => {
+const Education = () => {
   return (
     <motion.section
       id="home"
@@ -41,4 +41,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Education;

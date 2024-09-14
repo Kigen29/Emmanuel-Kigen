@@ -4,7 +4,7 @@ import { FiPhoneCall } from "react-icons/fi";
 import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
 
-const Main = () => {
+const About = () => {
   return (
     <motion.section
       id="home"
@@ -74,4 +74,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default About;
