@@ -72,7 +72,7 @@ export default function Contact() {
       <div className="w-full p-2 mt-3 px-6 py-6 grid grid-cols-1 md:grid-cols-3 gap-4">
         {/* Grid Section */}
         <a
-          href="https://instagram.com/yourusername"
+          href="https://www.instagram.com/kigen_?igsh=MWtldzNzOWV5bDE3MA=="
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-center p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 cursor-pointer"
@@ -84,7 +84,7 @@ export default function Contact() {
         </a>
 
         <a
-          href="https://github.com/yourusername"
+          href="https://github.com/Kigen29"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-center p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 cursor-pointer"
@@ -96,7 +96,7 @@ export default function Contact() {
         </a>
 
         <a
-          href="https://linkedin.com/in/yourusername"
+          href="https://www.linkedin.com/in/emmanuel-kigen-00387b263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-center p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 cursor-pointer"
