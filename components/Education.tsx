@@ -30,7 +30,7 @@ const Education = () => {
       <h3 className="kulim-park py-4 text-gray-600 max-w-[85%] m-auto text-justify">
         I hold a degree in Computer Science from Strathmore University. <br />
         I graduated with Second Class Honours - Upper Division. <br />
-        <span className=" text-[#5651e5]">Download my CV.</span>
+        <span className=" text-[#5651e5]">Click to Download my CV.</span>
         <div className="hidden lg:block">
           <Button onClick={handleClick}>
             CV <FaDownload className="ml-2 text-lg" />
