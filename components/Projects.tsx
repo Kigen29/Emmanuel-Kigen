@@ -84,7 +84,7 @@ export default function Projects() {
 
   return (
     <section id="projects" className="px-10 py-12 flex w-full mt-2 max-w-[1240px] m-auto flex-col">
-        <p className="text-xl tracking-widest uppercase text-[#5651e5]">Our Projects</p>
+        <p className="text-xl tracking-widest uppercase text-[#5651e5]">MY Projects</p>
       <div className="flex items-center justify-center py-4 flex-wrap mt-4">
         {["all", "development", "design"].map((category) => (
           <button

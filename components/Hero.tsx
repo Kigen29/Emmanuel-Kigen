@@ -9,11 +9,9 @@ export default function Hero() {
         <div id="words_left" className="w-[50%] pt-24">
             <h1 className="text-6xl font-bold leading-normal"><span className="underline underline-offset-4 decoration-[#F57906]">Hi</span> There, I am Emmanuel Kigen</h1>
             <div className="pr-10">
-                <p className="text-3xl leading-loose pt-3">Think it, Code it, Ship it.</p>
+                <p className="text-3xl text-[#5651e5] leading-loose pt-3">Think it, Code it, Ship it.</p>
             </div>
-            <div className="pt-5">
-                <MediumButton >Learn more</MediumButton>
-            </div>
+
         </div>
         <div className="flex justify-center mt-5 relative bg-gradient-to-b  from-blue-500 overflow-hidden rounded-full md:w-96 md:h-96 w-80 h-80 m-auto hover:scale-105 ease-in duration-300 shadow-xl shadow-[#F57906] cursor-pointer">
           <Image

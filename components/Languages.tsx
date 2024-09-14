@@ -15,11 +15,10 @@ import { motion } from "framer-motion";
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
         <div id="skills" className="w-full  p-2 mt-2 px-24">
           <div className="max-w-[1240px] m-auto flex mx-auto  flex-col justify-center h-full">
-            <p className="text-xl tracking-widest uppercase text-[#5651e5] ">
+            <p className="text-xl tracking-widest uppercase text-[#5651e5]  ">
               Skills
             </p>
-            <h2 className="py-4">What I can do</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 grid-cols-1 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 py-4 xl:grid-cols-4 grid-cols-1 gap-8">
               <div className="p-6 shadow-xl rounded-xl  hover:scale-105 ease-in duration-300 cursor-pointer">
                 <div className="grid grid-cols-2 gap-4  justify-center items-center">
                   <div className="m-auto">

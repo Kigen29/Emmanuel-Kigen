@@ -36,13 +36,13 @@ const About = () => {
       </h1>
       <p className="kulim-park py-4 text-gray-600 max-w-[85%] m-auto text-justify">
         As a dedicated software developer with international experience from
-        Estonia and Kenya, I am passionate about building innovative solutions
-        that make a lasting impact. My expertise spans technologies like React,
-        NextJS, Django, and Python. I have successfully delivered projects that
+        Estonia and Kenya. I am passionate about building innovative solutions
+        that make a lasting impact. My expertise spans technologies like React
+        NextJS Django and Python. I have successfully delivered projects that
         solve complex problems and create value for users. If you are looking
         for a qualified developer to bring your ideas to life and build
-        scalable, high-performance applications, let us connect! Reach out to me
-        via WhatsApp, Phone or Twitter, and lets create something exceptional
+        scalable and high-performance applications then let us connect. Reach out to me
+        via WhatsApp or Phone or even Twitter and lets create something exceptional
         together.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-5 gap-4 py-6">

@@ -23,10 +23,10 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-[#314933] ml-6 mr-6 mt-6 rounded-lg drop-shadow-2xl">
+    <nav className="bg-[#89CFF0] ml-6 mr-6 mt-6 rounded-lg drop-shadow-2xl">
       <div className="max-w-[1240px] mx-auto flex items-center justify-between p-4">
         <Link href="/" className="flex items-center">
-          <span className="text-xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-[#F65B36] to-[#F2A615]">
+          <span className="text-xl font-extrabold bg-clip-text text-transparent bg-[#F65B36] ">
             Kigen.
           </span>
         </Link>
