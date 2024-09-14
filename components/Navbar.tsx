@@ -12,7 +12,7 @@ export default function Navbar() {
   };
 
   const handleClick = () => {
-    const pdfUrl = "./../Kemboi Emmanuel Kigen CV.pdf";
+    const pdfUrl = "/Kemboi Emmanuel Kigen CV.pdf";
     const link = document.createElement("a");
     link.href = pdfUrl;
     link.download = "Kemboi Emmanuel Kigen CV.pdf";
