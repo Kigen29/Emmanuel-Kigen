@@ -1,5 +1,4 @@
 import React from "react"
-import MediumButton from "@/components/MediumButton";
 import Image from "next/image";
 import passportPhoto from "@/components/images/passportPhoto.jpg"
 
