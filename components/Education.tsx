@@ -1,13 +1,44 @@
-import React from "react"
-export default function Education() {
-  return (
-    <section className="px-24 flex justify-between" id="home">
-        <div id="words_left" className="w-[50%] pt-24">
-            <h1 className="text-6xl font-bold leading-normal"><span className="underline underline-offset-4 decoration-[#F57906]">Lets</span> Create A Memorable Journey</h1>
-            <div className="pr-10">
-                <p className="text-sm leading-loose pt-3">Eestie Explorer helps you discover magical places in Estonia and allows you to customize the places you would like to visit.</p>
-            </div>
-        </div>
-    </section>
-  )
+import React from "react";
+import { motion } from "framer-motion";
+import Button from "@/components/MediumButton";
+import { FaBars, FaDownload } from "react-icons/fa6";
+
+function handleClick() {
+  const pdfUrl = "\ Kemboi Emmanuel Kigen CV.pdf";
+  const link = document.createElement("a");
+  link.href = pdfUrl;
+  link.download = "Kemboi Emmanuel Kigen CV.pdf";
+  link.target = "_blank";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
 }
+
+const Main = () => {
+  return (
+    <motion.section
+      id="home"
+      className="px-10 py-12 w-full mt-2 max-w-[1240px] m-auto flex flex-col items-start text-left"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 30 }}
+      transition={{ duration: 2 }}
+    >
+      <p className="text-xl py-3 my-3 tracking-widest uppercase text-[#5651e5]">
+        MY EDUCATION
+      </p>
+      <h3 className="kulim-park py-4 text-gray-600 max-w-[85%] m-auto text-justify">
+        I hold a degree in Computer Science from Strathmore University. <br />
+        I graduated with Second Class Honours - Upper Division. <br />
+        <span className=" text-[#5651e5]">Download my CV.</span>
+        <div className="hidden lg:block">
+          <Button onClick={handleClick}>
+            CV <FaDownload className="ml-2 text-lg" />
+          </Button>
+        </div>
+      </h3>
+    </motion.section>
+  );
+};
+
+export default Main;

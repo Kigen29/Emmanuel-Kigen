@@ -1,5 +1,5 @@
 import React from "react";
-import {FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { FaTwitter, FaWhatsapp } from "react-icons/fa";
 import { FiPhoneCall } from "react-icons/fi";
 import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
@@ -14,7 +14,9 @@ const Main = () => {
       exit={{ opacity: 0, y: 30 }}
       transition={{ duration: 2 }}
     >
-      <p className="text-xl py-3 my-3 tracking-widest uppercase text-[#5651e5]">ABOUT ME</p>
+      <p className="text-xl py-3 my-3 tracking-widest uppercase text-[#5651e5]">
+        ABOUT ME
+      </p>
       <h2 className="text-3xl text-gray-700">I am a</h2>
       <h1 className="py-3 fjalla-one md:text-3xl text-md text-[#5651e5]">
         <Typewriter
@@ -31,14 +33,17 @@ const Main = () => {
             cursor: "",
           }}
         />
-      </h1>     
+      </h1>
       <p className="kulim-park py-4 text-gray-600 max-w-[85%] m-auto text-justify">
-      As a dedicated software developer with international experience from Estonia and Kenya,
-      I am passionate about building innovative solutions that make a lasting impact. 
-      My expertise spans technologies like React, NextJS, Django, and Python. I have successfully delivered projects
-      that solve complex problems and create value for users. If you are looking for a qualified developer
-      to bring your ideas to life and build scalable, high-performance applications, let us connect!
-      Reach out to me via WhatsApp, Phone or Twitter, and lets create something exceptional together.
+        As a dedicated software developer with international experience from
+        Estonia and Kenya, I am passionate about building innovative solutions
+        that make a lasting impact. My expertise spans technologies like React,
+        NextJS, Django, and Python. I have successfully delivered projects that
+        solve complex problems and create value for users. If you are looking
+        for a qualified developer to bring your ideas to life and build
+        scalable, high-performance applications, let us connect! Reach out to me
+        via WhatsApp, Phone or Twitter, and lets create something exceptional
+        together.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-5 gap-4 py-6">
         <a
